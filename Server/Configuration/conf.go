@@ -5,14 +5,19 @@ import (
 	"io/ioutil"
 )
 
+// Conf ...
 var Conf Configuration
 
-// Conf ...
+// Configuration configuration file representation
 type Configuration struct {
-	LanguageDetectionAPI string `json:"LanguageDetectionAPI"`
-	DictionaryFolder     string `json:"DictionaryFolder"`
+	TwitterToken      string `json:"TwitterToken"`
+	DictionaryFolder  string `json:"dictionaryFolder"`
+	ApplicationFolder string `json:"ApplicationFolder"`
+	ClientFolder      string `json:"ClientFolder"`
+	IndexPath         string `json:"IndexPath"`
 }
 
+// InitConfiguration init configuration struct
 func InitConfiguration(configurationPath string) (err error) {
 	b, err := ioutil.ReadFile(configurationPath)
 	if err != nil {

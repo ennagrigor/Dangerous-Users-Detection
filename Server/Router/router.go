@@ -1,10 +1,11 @@
 package Router
 
 import (
-	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
 	"time"
+	"userdetection/Configuration"
 
 	"github.com/gorilla/mux"
 )
@@ -12,27 +13,30 @@ import (
 func registerRoutes(clientBuildPath string) (router *mux.Router) {
 	router = mux.NewRouter()
 
-	// an example API handler
-	router.HandleFunc("/api/health", func(w http.ResponseWriter, r *http.Request) {
-		json.NewEncoder(w).Encode(map[string]bool{"ok": true})
-	}).Methods("GET")
-	// static files handler
+	// Get user tweets route
+	router.HandleFunc("/tweets", GetTweets).Methods(http.MethodPost)
+	// Get top dangerous users route
+	router.HandleFunc("/dangerous-users", GetTopDangerousUsers).Methods(http.MethodGet)
+
+	// Static files handler
 	spa := spaHandler{staticPath: clientBuildPath, indexPath: "index.html"}
 	router.PathPrefix("/").Handler(spa)
 
 	return
 }
 
+// InitServer init server router
 func InitServer() {
-	clientBuildPath := `C:\Users\home\Desktop\UserDetection\Client\client\build`
-	router := registerRoutes(clientBuildPath)
+	router := registerRoutes(Configuration.Conf.ClientFolder)
+	const address = "127.0.0.1:8080"
 
 	server := &http.Server{
 		Handler:      router,
-		Addr:         "127.0.0.1:8999",
+		Addr:         address,
 		WriteTimeout: 15 * time.Second,
 		ReadTimeout:  30 * time.Second,
 	}
 
+	fmt.Println("Server is listening on", address)
 	log.Fatal(server.ListenAndServe())
 }
