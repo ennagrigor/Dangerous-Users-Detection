@@ -1,6 +1,6 @@
 {
   "ApplicationFolder": "Temp",
   "ClientFolder": "../client/build",
-  "DictionaryFolder": "TextDetection/Dictonary",
-  "TwitterToken": "AAAAAAAAAAAAAAAAAAAAAHoeTAEAAAAAxJmYY0RvKbKf4AsDsbExdtNZzvc%3DDv28oLBBwmXQXeM0xkBpZA2bbdHwZKcCwWwenOL3ku2hw6MBgm"
+  "DictionaryFolder": "!!!!dictionary folder path!!!!!",
+  "TwitterToken": "!!!!!put here twitter token!!!!!"
 }
