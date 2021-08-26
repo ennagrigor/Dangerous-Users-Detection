@@ -1,4 +1,5 @@
 # To run the client: 
 
-write in terminal: 
+In order to build client - 
+run from client folder: 
 npm run build
