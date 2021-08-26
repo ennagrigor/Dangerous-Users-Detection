@@ -1,6 +1,6 @@
 # Dangerous User Detection on Social Media
 
-<img src="https://github.com/ennagrigor/Dangerous-User-Detection/blob/main/Images/Logo.png" width=200>
+<img src="https://github.com/ennagrigor/Dangerous-Users-Detection/blob/main/Images/Logo.png" width=200>
 
 ### A final project a Ariel University 
 
@@ -19,7 +19,7 @@ Written in GO lang for server side and REACT for client side.
 
 ## Database
 
-<img src="https://github.com/ennagrigor/Dangerous-User-Detection/blob/main/Images/blevelogo.png" width=200>
+<img src="https://github.com/ennagrigor/Dangerous-Users-Detection/blob/main/Images/blevelogo.png" width=200>
 The database that was used is Bleve as it is build in with go lang and fit the project needs. 
 
 ## The Server Side
@@ -70,21 +70,21 @@ The app will do a check and present the top 5 most dangerous users.
 This is done by checking all the tweets found by the userID and summing up their score. 
 The five users with the hiest score will be shown to the client. 
 
-<img src="https://github.com/ennagrigor/Dangerous-User-Detection/blob/main/Images/Top5.png" width=600>
+<img src="https://github.com/ennagrigor/Dangerous-Users-Detection/blob/main/Images/Top5.png" width=600>
  
 ## The client Side: 
  
  The client will be able to see the top 5 users the were classified as most dangerous: 
  
-<img src="https://github.com/ennagrigor/Dangerous-User-Detection/blob/main/Images/Top5.png" width=1000>
+<img src="https://github.com/ennagrigor/Dangerous-Users-Detection/blob/main/Images/Top5.png" width=1000>
  
  The will also see the 10 most recent tweets that were found including information about the user and score: 
  
-<img src="https://github.com/ennagrigor/Dangerous-User-Detection/blob/main/Images/Tweets.png" width=1000>
+<img src="https://github.com/ennagrigor/Dangerous-Users-Detection/blob/main/Images/Tweets.png" width=1000>
  
  And they can search for tweets from the database based on the parameters from the chart: 
  
-<img src="https://github.com/ennagrigor/Dangerous-User-Detection/blob/main/Images/search.png" width=1000>
+<img src="https://github.com/ennagrigor/Dangerous-Users-Detection/blob/main/Images/search.png" width=1000>
  
 
 
