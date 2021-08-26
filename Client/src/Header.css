@@ -1,0 +1,12 @@
+.header {
+    background-color: white;
+    background-image: url("./Images/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.img-center {
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+}
