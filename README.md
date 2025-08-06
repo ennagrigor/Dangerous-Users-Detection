@@ -2,6 +2,7 @@
 
 <img src="https://github.com/ennagrigor/Dangerous-Users-Detection/blob/master/Images/Logo.png" width=200>
 
+
 ### A final project a Ariel University 
 
 The purpose of the product is to scan social media platforms that have 
@@ -9,9 +10,11 @@ public APIs and extract text via posts, comments, tweets etc.
 Then it will monitor and identify keywords according to a pre-defined "dangerous" vocabulary (that can always be altered in order to fit any spesific need). 
 With the help of monitoring and identifying we can maintain a list of suspicious people who may pose a social danger.
 
+
 **Created by:**
 
 [Enna Grigor](https://github.com/ennagrigor)
+
 
 ## Languages
 
